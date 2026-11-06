@@ -3,6 +3,11 @@
   "project": "char-diff",
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 31,
+      "sha256": "7846b37551c23529eb00c68fbb5a435390e922d9db2625cb88681c31746b289e"
+    },
+    {
       "path": ".github/workflows/cpu.yml",
       "bytes": 397,
       "sha256": "88805555f6968c70363626e8bf67f419dfcda59a8f4e20a322332c90169368e1"
@@ -24,8 +29,8 @@
     },
     {
       "path": "char_diff/ae_full_sampler.py",
-      "bytes": 5820,
-      "sha256": "d19b8f8fb823c33ffdd0bec560ccf238fe8cfe04af192b4b2c46574b02b057c9"
+      "bytes": 5696,
+      "sha256": "9d79d709f2c203bf11f47820dd982af1130d8c676ad2ca223d744dcf6f4a821f"
     },
     {
       "path": "char_diff/ae_lazy_paths.py",
@@ -54,8 +59,8 @@
     },
     {
       "path": "char_diff/ae_prefetch.py",
-      "bytes": 2548,
-      "sha256": "9a80ba39f2f3c6451d4dd8372d97d06764bf1c5dc1ea07d454e6ef492e782ce1"
+      "bytes": 2547,
+      "sha256": "211c7597539265ab9fb49287530ca68ad95fd83fdde6a7956115bea46b21a74b"
     },
     {
       "path": "char_diff/ae_quality.py",
@@ -79,13 +84,13 @@
     },
     {
       "path": "char_diff/ae_training.py",
-      "bytes": 19361,
-      "sha256": "fc2d9028902dc6ee333b0cec2d673dddc9f92a5e13f8a0379df26214e0fa872b"
+      "bytes": 19022,
+      "sha256": "9afb88f55d4c753c9b69831b4b32734a806a0146948fc7053799dff9aea0f060"
     },
     {
       "path": "char_diff/ae_windows.py",
-      "bytes": 15322,
-      "sha256": "66c21b8568c2af799f8c78f33bae80a1c5dbc9b9e1355ec2f69b3738ab2138d9"
+      "bytes": 15024,
+      "sha256": "bb6f5f64c85d91a7597f4aae9650f11368be7721ea69402724228fa21d199137"
     },
     {
       "path": "char_diff/ar.py",
@@ -269,13 +274,13 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 272,
-      "sha256": "804752edd0c0b08f2a71311cc7154875e2c48e3fab7efd5037dd2bef3510d6b4"
+      "bytes": 331,
+      "sha256": "ff0b60068aef22832aa71ce7104564db8b7760db6d4fcd48a4b37baefd98916e"
     },
     {
       "path": "configs/full_ae48_epoch1.yaml",
-      "bytes": 1144,
-      "sha256": "d6d91cc19c1e7413a2025aea51af1479e0a6eefc1730c5f2d90a94bda19d1172"
+      "bytes": 1091,
+      "sha256": "e093d42f06092b06a8d74ec81cb1ada6727bdb5a839e881780ab6b8f03632e84"
     },
     {
       "path": "configs/multilingual_x0_78m_bpe.yaml",
@@ -284,18 +289,18 @@
     },
     {
       "path": "configs/multilingual_x0_78m_grid8.yaml",
-      "bytes": 1250,
-      "sha256": "e77cecec50eec0f030ae6d7e6a1ae8d3644c0242b019d66c1519259ab56f2dfa"
+      "bytes": 1249,
+      "sha256": "c633f20cf9a57fe9261f05f82dfc9b7be4af2497da85debf7e6c7e5301e718d6"
     },
     {
       "path": "configs/tinystories_cpt_beta21.yaml",
-      "bytes": 700,
-      "sha256": "e214efb06611cc5b1cc25a46ccc5d18432da2f52130c7e18ab21537894b7f616"
+      "bytes": 659,
+      "sha256": "4f10be1a646ff4aa7d53fdd5a4e3988d9badec9dcc66d686da784869ae0e9749"
     },
     {
       "path": "configs/tinystories_cpt_uniform.yaml",
-      "bytes": 700,
-      "sha256": "40db7770b2641537149eb82208d2475f569479c8221cfe8569d7e871f54753f2"
+      "bytes": 659,
+      "sha256": "735dd7831c7843fb6ab9875e1466c350be8c24f73952442dcc1f4b22d748f31f"
     },
     {
       "path": "configs/tinystories_gmm_ar_22m.yaml",
@@ -304,13 +309,13 @@
     },
     {
       "path": "configs/tinystories_gmm_early.yaml",
-      "bytes": 1012,
-      "sha256": "fbc2a87b7eaa1da5164f86d335f275159184f0692f7db9331e245a35bdbfbe5d"
+      "bytes": 959,
+      "sha256": "27f66b066a71ad6fc323241195e61f179833e580a4256e6bc63d86b55382a1c7"
     },
     {
       "path": "configs/tinystories_gmm_late.yaml",
-      "bytes": 1011,
-      "sha256": "5408b44c57e7496c556d34ba20ca7fa2f43874fd3bef0e9daa56399ab048ead2"
+      "bytes": 958,
+      "sha256": "8d2284da1bacea3c3a67f3f183fd43b18fb6293cc604fcb019635f1cbee714ff"
     },
     {
       "path": "configs/tinystories_multilingual_ae48.yaml",
@@ -319,13 +324,13 @@
     },
     {
       "path": "configs/tinystories_v_22m.yaml",
-      "bytes": 766,
-      "sha256": "8eece743d9496377618034c4939320f52e43ada3d95c61ad39540a05063a43e8"
+      "bytes": 723,
+      "sha256": "7afd3da0b74a220164bbb34afceb1653160654dc89637475acf4b75ba868a020"
     },
     {
       "path": "configs/tinystories_v_x0loss_22m.yaml",
-      "bytes": 769,
-      "sha256": "36df0291dd1e1692f46411d79afea9ba8cc6e37413295b2708ea15a47d4ce0ec"
+      "bytes": 726,
+      "sha256": "f6e52b3dd35db16468c11ec2bbc20a97bc9d19cb71700128415f1bf8a0bef64d"
     },
     {
       "path": "configs/tinystories_x0_22m.yaml",
@@ -334,13 +339,13 @@
     },
     {
       "path": "configs/tinystories_x0_block1.yaml",
-      "bytes": 913,
-      "sha256": "948f6f1b97f676db5d24a403a4823754bbe0d3115f1f2826fd840bcf5336f78d"
+      "bytes": 865,
+      "sha256": "80eb696de23cf233858a54656a4ec7fd8feafb5146134f91b99ca90c5b620cf1"
     },
     {
       "path": "configs/tinystories_x0_block4.yaml",
-      "bytes": 913,
-      "sha256": "048446a42282b196341542e59351b4fd0bf2edeb6423e47781812a7200103bf5"
+      "bytes": 865,
+      "sha256": "cd54af0c4c3cb2500b2d507c3a8b89c04c4f4e946c14abbbd500b0688040a69b"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -349,8 +354,8 @@
     },
     {
       "path": "docs/evidence/block_size.json",
-      "bytes": 14582,
-      "sha256": "89eff4412cd2d1b6072e7914194c7b6134f7165700804faf1644957abc370f1e"
+      "bytes": 14043,
+      "sha256": "3cbb8aecd6eda5c40aa06d8593f59aad465d8bbd8ce16b11d1cc6a3a5ebaef7d"
     },
     {
       "path": "docs/evidence/results.json",
@@ -379,8 +384,8 @@
     },
     {
       "path": "docs/samples.md",
-      "bytes": 7819,
-      "sha256": "dbf990e5ae4a85d06017edd63a6139ea82a7a925fba838805ed7aeb05a337898"
+      "bytes": 7677,
+      "sha256": "15b7c66b5809eb7e4168d0e1a214b1458c15ed37fdd974504645870cd44f4e64"
     },
     {
       "path": "LICENSE",
@@ -429,8 +434,8 @@
     },
     {
       "path": "scripts/analyze_sampling_steps.py",
-      "bytes": 5119,
-      "sha256": "81ca5b12d8770470c33cefa0df54e6578193f31807996182880370b3fb2e85bd"
+      "bytes": 5040,
+      "sha256": "9141014de44ca9e6fdff47311010cb10417a41cec1b8628dc8d46dbcf2b0ae7b"
     },
     {
       "path": "scripts/attached_grid8_probe.py",
@@ -484,8 +489,8 @@
     },
     {
       "path": "scripts/check_storage.py",
-      "bytes": 825,
-      "sha256": "5a66b2a3fe2943044e2c1b9ba565f4e6966590410bfc8a5c2c50815e6f1caebe"
+      "bytes": 805,
+      "sha256": "4a9fe0b5ad51b8ee32c3c21eee357c07ffeb8f192e024b3b46bbe311199df8a8"
     },
     {
       "path": "scripts/compare_byte_em.py",
@@ -509,13 +514,13 @@
     },
     {
       "path": "scripts/compare_history_reencoding.py",
-      "bytes": 9944,
-      "sha256": "6814d88ef6121d1b84023805feb2541a69f15eb1d0689e26dc5e8366fe0aa9b9"
+      "bytes": 9805,
+      "sha256": "0cb90fc920dc7f5183183b8a265594ed65c4fd2d10251e7997ceafb4b3951c07"
     },
     {
       "path": "scripts/compare_sampling_steps.py",
-      "bytes": 10209,
-      "sha256": "5fae610398325529ce9e9a5ce7be5ff786dc0e2f183e5d3d84d0eb4266b114a7"
+      "bytes": 10073,
+      "sha256": "00bf4e7dd5d25950076eb0be9a74d12d3711e79b6284ce33aad33d31c8117ff6"
     },
     {
       "path": "scripts/compare_sparse_path_proposals.py",
@@ -554,8 +559,8 @@
     },
     {
       "path": "scripts/evaluate_full_epoch.py",
-      "bytes": 2227,
-      "sha256": "043881efe459dc856a16f69aac3da95b1770ee3bf1f7664fabb589ecad6974a2"
+      "bytes": 2226,
+      "sha256": "2d004840d7c82a36a362552203e42c916617f59678097da6d683a57ea35dca15"
     },
     {
       "path": "scripts/evaluate_utf8_ae.py",
@@ -584,8 +589,8 @@
     },
     {
       "path": "scripts/prepare_full_ae.py",
-      "bytes": 3971,
-      "sha256": "325eaff138f8d7166d1543d3f31b095773d8c508f9a51c65cbc6932ee6865dea"
+      "bytes": 3970,
+      "sha256": "443bb4ca2f0fd9ec90b21fd16af7aaf4233cd515a653ea460a6aeb670db72196"
     },
     {
       "path": "scripts/prepare_full_grid8.py",
@@ -709,8 +714,8 @@
     },
     {
       "path": "scripts/summarize_path_diffusability.py",
-      "bytes": 11838,
-      "sha256": "5a71dfb45060128153c5397332b6ab5c68bc0bb328f9ddbd0ac0adb64cb62d85"
+      "bytes": 11638,
+      "sha256": "0d625d0ddc0383e7040040c77de8c90c7bb2a0d90c10d9149ea8db60ff26aab4"
     },
     {
       "path": "scripts/summarize_path_optimization.py",
@@ -819,8 +824,8 @@
     },
     {
       "path": "tests/check_full_epoch_ae.py",
-      "bytes": 2393,
-      "sha256": "f4fae1c2f7a8584ff4161cb90a998e0371ff1e3c8c9f8f6cb47b0ad3c03183c4"
+      "bytes": 2392,
+      "sha256": "e826a81256ed71dae86b81d6c5c5da58a464c80c26a7d6e88f85b6c3acec050d"
     },
     {
       "path": "tests/check_lazy_paths.py",
@@ -889,8 +894,8 @@
     },
     {
       "path": "tests/test_continuation.py",
-      "bytes": 4388,
-      "sha256": "d01f82125e3619782a41bbedb024f9e758366556ab9306633a4ab841ca265fbd"
+      "bytes": 4321,
+      "sha256": "7d3804f090cafe7994dfacca2772d50cc02a82a7052decbbac6b1846613c9768"
     },
     {
       "path": "tests/test_cycle_retry.py",
@@ -919,18 +924,18 @@
     },
     {
       "path": "tests/test_history_reencoder.py",
-      "bytes": 3314,
-      "sha256": "80c77c61546a7435a088b849fbe099e757bfac13be8d2d21fc1c805f082c5a73"
+      "bytes": 3250,
+      "sha256": "1878ac85b2eddd68a5034fcee5acb17a96b37b53c6e016ea0f221d33333236c0"
     },
     {
       "path": "tests/test_prediction_target.py",
-      "bytes": 5352,
-      "sha256": "453e9a7f3d68558917a31136507be209be5464e482cd2dfe4f2e60664282833a"
+      "bytes": 5263,
+      "sha256": "0c72ecbfdcb70bab91518b5f233a258fe5207a57d9e440edb51334c4ce424ab3"
     },
     {
       "path": "tests/test_system.py",
-      "bytes": 8919,
-      "sha256": "168893e4b2d7b2c5ca3036ede221790c4523068496863ec6074a4020aad594f8"
+      "bytes": 8775,
+      "sha256": "6f43805cc191ccc688b906faea25cc7a388ef498dbc8bfb3d73146be04addf8b"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -943,6 +948,8 @@
   "binary_weights_bundled": false,
   "training_data_bundled": false,
   "packaging_changes": [
+    "char-diff\\docs\\evidence\\block_size.json",
+    "char-diff\\scripts\\profile_tinystories.py",
     "cose-research\\scripts\\review\\diagnose_ae_geometry.py",
     "cose-research\\scripts\\review\\export_joint_statistical.py",
     "cose-research\\scripts\\review\\export_latent_geometry.py",
@@ -950,8 +957,6 @@
     "cose-research\\src\\st\\grounding_capacity.py",
     "cose-research\\src\\st\\page_diffusion_diagnostic.py",
     "cose-research\\src\\st\\train_ae_direct.py",
-    "cose-research\\src\\st\\train_formal.py",
-    "char-diff\\scripts\\profile_tinystories.py",
-    "char-diff\\docs\\evidence\\block_size.json"
+    "cose-research\\src\\st\\train_formal.py"
   ]
 }
