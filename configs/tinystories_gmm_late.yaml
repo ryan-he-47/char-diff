@@ -1,0 +1,53 @@
+data:
+  cache: data/tinystories
+  window: 512
+  block: 16
+  carry: 128
+model:
+  latent_dim: 48
+  width: 384
+  layers: 8
+  heads: 6
+  ffn: 1024
+  block: 16
+  grad_checkpoint: true
+  gmm_components: 8
+  gmm_sigma: 0.2
+train:
+  seed: 1234
+  epochs: 2.25
+  batch_windows: 64
+  micro_batch: 8
+  precision: fp16
+  lr: 0.0003
+  betas:
+  - 0.9
+  - 0.95
+  eps: 1.0e-08
+  weight_decay: 0.1
+  clip: 1.0
+  ema: 0.999
+  warmup_fraction: 0.01
+  decay_fraction: 0.2
+  log_every: 10
+  save_every: 250
+  milestones: []
+  run_dir: runs/tinystories_gmm_late
+  max_steps: 0
+  prediction_type: x0
+  loss_space: x0
+  time_sampling: uniform
+  gmm_init_rms: 0.01
+  gmm_init_seed: 20261102
+  reference_schedule: assets/gmm_control_schedule.json
+  gmm_source_sha256: 20084fe990c7a1422d4f8ae1bf17944b77f0d526219ba750e879635072f4c5a0
+storage:
+  project_limit_gib: 16.0
+  reserve_gib: 1.0
+  require_quota: true
+sample:
+  steps: 32
+  units: 128
+  seed: 42
+  sampler: gm_ode
+  substeps: 4

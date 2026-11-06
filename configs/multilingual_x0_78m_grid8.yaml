@@ -1,0 +1,55 @@
+data:
+  mode: grid8
+  manifest: data/full_ae_raw_v1/manifest.json
+  ae_checkpoint: releases/full_grid8_fullae_20261106/assets/ae_full.pt
+  ae_sha256: 4153028fa4c662e784e3e2a6d7957236bf29f5d0f237a006213a5ce0270f4073
+  tokenizer: assets/tokenizer.json
+  vocab_scores: releases/multilingual_prior_20261106/assets/vocab_scores.npz
+  bpe_assets: data/multilingual_bpe_fullae
+  segments: data/multilingual_grid8_fullae
+  hot_cache: data/multilingual_prior_hot
+  hot_cache_gib: 2
+  result_cache_entries: 100000
+  ae_batch: 1024
+  nll_threshold: 0.03
+  require_complete: true
+  window: 512
+  carry: 128
+  lanes: 8
+  prefetch: 3
+model:
+  latent_dim: 48
+  width: 512
+  layers: 16
+  heads: 8
+  ffn: 1408
+  block: 8
+  length_capacity: 8
+  grad_checkpoint: true
+train:
+  seed: 1234
+  prediction_type: x0
+  loss_space: x0
+  block_sizes: [1, 4, 8]
+  batch_windows: 64
+  micro_batch: 8
+  precision: fp16
+  lr: 0.0003
+  min_lr: 0.000003
+  betas: [0.9, 0.95]
+  eps: 0.00000001
+  weight_decay: 0.1
+  clip: 1.0
+  ema: 0.999
+  warmup_fraction: 0.01
+  decay_fraction: 0.1
+  log_every: 10
+  save_every: 250
+  milestones: [0.25, 0.5, 0.9]
+  stage_eval: true
+  run_dir: runs/multilingual_x0_78m_grid8
+storage:
+  project_limit_gib: 48
+  reserve_gib: 1
+  require_quota: true
+

@@ -1,0 +1,539 @@
+{
+  "protocol": {
+    "split": "dev",
+    "windows": [
+      2806,
+      1902,
+      4692,
+      2619,
+      2479,
+      3593,
+      1893,
+      535,
+      1293,
+      185,
+      191,
+      3258,
+      556,
+      2676,
+      2707,
+      786,
+      3945,
+      5,
+      4799,
+      4201,
+      1448,
+      904,
+      2874,
+      2213,
+      2524,
+      3013,
+      2039,
+      2108,
+      1928,
+      3752,
+      3898,
+      4422,
+      661,
+      2182,
+      3530,
+      2469,
+      240,
+      1468,
+      4388,
+      1231,
+      4055,
+      2353,
+      907,
+      1825,
+      2641,
+      2166,
+      341,
+      1219,
+      836,
+      2246,
+      4798,
+      4563,
+      2455,
+      3839,
+      2115,
+      3084,
+      1544,
+      2050,
+      1740,
+      811,
+      3962,
+      1518,
+      2214,
+      2968
+    ],
+    "anchors": 1845,
+    "seeds": [
+      42,
+      123
+    ],
+    "steps_per_native_block": 32,
+    "weights": "ema",
+    "precision": "fp32",
+    "batch": 64,
+    "history": "identical saved true history at each common B16 anchor, <=192 baseline BPE tokens",
+    "score": "entire decoded first native AE unit equals entire target byte string",
+    "byte_weighting": "sum(target_bytes * entire_unit_hit) / sum(target_bytes)",
+    "noise": "pure Gaussian; draw old 16x48 noise per anchor, retain first B positions",
+    "length": "min(native B, saved original block length); target bytes used only in scoring",
+    "anchors_file": "runs/cross_model_byte_em_20261102/anchors.json",
+    "anchors_sha256": "7d5ee2a5a2eb76560e2a4bd6f8b3e7e629baf9ba322cf4984832e401941e258d",
+    "control_file": "runs/cross_model_byte_em_20261102/x0_euler.jsonl",
+    "control_sha256": "950cdb3925de474653b4d60df8d90fdb50f06eb111db37e7a9e20074de624525"
+  },
+  "models": {
+    "b16": {
+      "cached": true,
+      "metrics": {
+        "cases": 3690,
+        "exact": 1501,
+        "target_bytes": 16152,
+        "exact_bytes": 5686,
+        "unit_em": 0.4067750677506775,
+        "byte_weighted_unit_em": 0.3520307082714215,
+        "by_seed": {
+          "42": {
+            "cases": 1845,
+            "exact": 759,
+            "target_bytes": 8076,
+            "exact_bytes": 2873,
+            "unit_em": 0.4113821138211382,
+            "byte_weighted_unit_em": 0.3557454185240218
+          },
+          "123": {
+            "cases": 1845,
+            "exact": 742,
+            "target_bytes": 8076,
+            "exact_bytes": 2813,
+            "unit_em": 0.4021680216802168,
+            "byte_weighted_unit_em": 0.3483159980188212
+          }
+        },
+        "by_length": {
+          "1-1": {
+            "cases": 54,
+            "exact": 40,
+            "target_bytes": 54,
+            "exact_bytes": 40,
+            "unit_em": 0.7407407407407407,
+            "byte_weighted_unit_em": 0.7407407407407407
+          },
+          "2-2": {
+            "cases": 440,
+            "exact": 302,
+            "target_bytes": 880,
+            "exact_bytes": 604,
+            "unit_em": 0.6863636363636364,
+            "byte_weighted_unit_em": 0.6863636363636364
+          },
+          "3-4": {
+            "cases": 1656,
+            "exact": 706,
+            "target_bytes": 6022,
+            "exact_bytes": 2550,
+            "unit_em": 0.42632850241545894,
+            "byte_weighted_unit_em": 0.42344735968116903
+          },
+          "5-8": {
+            "cases": 1462,
+            "exact": 444,
+            "target_bytes": 8422,
+            "exact_bytes": 2401,
+            "unit_em": 0.3036935704514364,
+            "byte_weighted_unit_em": 0.2850866777487533
+          },
+          "9-16": {
+            "cases": 78,
+            "exact": 9,
+            "target_bytes": 774,
+            "exact_bytes": 91,
+            "unit_em": 0.11538461538461539,
+            "byte_weighted_unit_em": 0.11757105943152454
+          },
+          "17-32": {
+            "cases": 0,
+            "exact": 0,
+            "target_bytes": 0,
+            "exact_bytes": 0,
+            "unit_em": null,
+            "byte_weighted_unit_em": null
+          }
+        }
+      }
+    },
+    "b1": {
+      "training": {
+        "checkpoint": "runs/tinystories_x0_block1/last.pt",
+        "sha256": "a99c6cc0328d4281dfca0339f81ab4ec2759173a59f233e8890982148c72eac1",
+        "state": {
+          "step": 28989,
+          "seen_units": 833611666,
+          "attempted_units": 834158083,
+          "skipped_units": 546417,
+          "attempts": 29008,
+          "saved_milestones": [
+            0.1,
+            0.25,
+            0.5,
+            1.0,
+            1.6
+          ]
+        },
+        "source_step": 20613,
+        "successful_updates": 8376,
+        "skips": 0,
+        "first200_loss": 0.1365157035677095,
+        "last200_loss": 0.11498986654148861,
+        "result": {
+          "step": 28989,
+          "seen_units": 833611666,
+          "elapsed_seconds": 6993.862905716989,
+          "checkpoint": "runs/tinystories_x0_block1/last.pt",
+          "stopped_by_request": false
+        },
+        "dev_ema": {
+          "step": 28989,
+          "split": "dev",
+          "weights": "ema",
+          "precision": "fp32",
+          "seed": 31415,
+          "cache_fingerprint": "868bac51b4a77addf007993615aabe03b80a2d8be3259d029ad6a0b92b545a6e",
+          "prediction_type": "x0",
+          "diffusion_block": 1,
+          "cache_packing_block": 16,
+          "metric": "x0_mse",
+          "buckets": [
+            {
+              "time": 0.05,
+              "mse": 0.0002930610103698929,
+              "units": 23501
+            },
+            {
+              "time": 0.25,
+              "mse": 0.000626771083643518,
+              "units": 23501
+            },
+            {
+              "time": 0.5,
+              "mse": 0.011275650948628875,
+              "units": 23501
+            },
+            {
+              "time": 0.75,
+              "mse": 0.20037370133687069,
+              "units": 23501
+            },
+            {
+              "time": 0.95,
+              "mse": 0.3842311981574726,
+              "units": 23501
+            }
+          ]
+        }
+      },
+      "metrics": {
+        "cases": 3690,
+        "exact": 1620,
+        "target_bytes": 16152,
+        "exact_bytes": 6212,
+        "unit_em": 0.43902439024390244,
+        "byte_weighted_unit_em": 0.38459633481921746,
+        "by_seed": {
+          "42": {
+            "cases": 1845,
+            "exact": 819,
+            "target_bytes": 8076,
+            "exact_bytes": 3133,
+            "unit_em": 0.44390243902439025,
+            "byte_weighted_unit_em": 0.3879395740465577
+          },
+          "123": {
+            "cases": 1845,
+            "exact": 801,
+            "target_bytes": 8076,
+            "exact_bytes": 3079,
+            "unit_em": 0.43414634146341463,
+            "byte_weighted_unit_em": 0.38125309559187714
+          }
+        },
+        "by_length": {
+          "1-1": {
+            "cases": 54,
+            "exact": 37,
+            "target_bytes": 54,
+            "exact_bytes": 37,
+            "unit_em": 0.6851851851851852,
+            "byte_weighted_unit_em": 0.6851851851851852
+          },
+          "2-2": {
+            "cases": 440,
+            "exact": 309,
+            "target_bytes": 880,
+            "exact_bytes": 618,
+            "unit_em": 0.7022727272727273,
+            "byte_weighted_unit_em": 0.7022727272727273
+          },
+          "3-4": {
+            "cases": 1656,
+            "exact": 770,
+            "target_bytes": 6022,
+            "exact_bytes": 2785,
+            "unit_em": 0.46497584541062803,
+            "byte_weighted_unit_em": 0.4624709398870807
+          },
+          "5-8": {
+            "cases": 1462,
+            "exact": 499,
+            "target_bytes": 8422,
+            "exact_bytes": 2722,
+            "unit_em": 0.34131326949384405,
+            "byte_weighted_unit_em": 0.3232011398717644
+          },
+          "9-16": {
+            "cases": 78,
+            "exact": 5,
+            "target_bytes": 774,
+            "exact_bytes": 50,
+            "unit_em": 0.0641025641025641,
+            "byte_weighted_unit_em": 0.06459948320413436
+          },
+          "17-32": {
+            "cases": 0,
+            "exact": 0,
+            "target_bytes": 0,
+            "exact_bytes": 0,
+            "unit_em": null,
+            "byte_weighted_unit_em": null
+          }
+        }
+      },
+      "seconds": 57.64573229999951
+    },
+    "b4": {
+      "training": {
+        "checkpoint": "runs/tinystories_x0_block4/last.pt",
+        "sha256": "e36f72635302916ab5328ee8d641c6bf4f655a7c496682d8d10d2a104a1e2154",
+        "state": {
+          "step": 28989,
+          "seen_units": 833610481,
+          "attempted_units": 834185203,
+          "skipped_units": 574722,
+          "attempts": 29009,
+          "saved_milestones": [
+            0.1,
+            0.25,
+            0.5,
+            1.0,
+            1.6
+          ]
+        },
+        "source_step": 20613,
+        "successful_updates": 8376,
+        "skips": 1,
+        "first200_loss": 0.17827668133681063,
+        "last200_loss": 0.16422995867144452,
+        "result": {
+          "step": 28989,
+          "seen_units": 833610481,
+          "elapsed_seconds": 7325.382620082237,
+          "checkpoint": "runs/tinystories_x0_block4/last.pt",
+          "stopped_by_request": false
+        },
+        "dev_ema": {
+          "step": 28989,
+          "split": "dev",
+          "weights": "ema",
+          "precision": "fp32",
+          "seed": 31415,
+          "cache_fingerprint": "868bac51b4a77addf007993615aabe03b80a2d8be3259d029ad6a0b92b545a6e",
+          "prediction_type": "x0",
+          "diffusion_block": 4,
+          "cache_packing_block": 16,
+          "metric": "x0_mse",
+          "buckets": [
+            {
+              "time": 0.05,
+              "mse": 0.00029143935264139373,
+              "units": 23501
+            },
+            {
+              "time": 0.25,
+              "mse": 0.0006090074666324745,
+              "units": 23501
+            },
+            {
+              "time": 0.5,
+              "mse": 0.009536988864243881,
+              "units": 23501
+            },
+            {
+              "time": 0.75,
+              "mse": 0.2481085905908292,
+              "units": 23501
+            },
+            {
+              "time": 0.95,
+              "mse": 0.6743072321040833,
+              "units": 23501
+            }
+          ]
+        }
+      },
+      "metrics": {
+        "cases": 3690,
+        "exact": 1568,
+        "target_bytes": 16152,
+        "exact_bytes": 5940,
+        "unit_em": 0.42493224932249324,
+        "byte_weighted_unit_em": 0.36775631500742945,
+        "by_seed": {
+          "42": {
+            "cases": 1845,
+            "exact": 788,
+            "target_bytes": 8076,
+            "exact_bytes": 2981,
+            "unit_em": 0.42710027100271003,
+            "byte_weighted_unit_em": 0.3691183754333829
+          },
+          "123": {
+            "cases": 1845,
+            "exact": 780,
+            "target_bytes": 8076,
+            "exact_bytes": 2959,
+            "unit_em": 0.42276422764227645,
+            "byte_weighted_unit_em": 0.36639425458147595
+          }
+        },
+        "by_length": {
+          "1-1": {
+            "cases": 54,
+            "exact": 43,
+            "target_bytes": 54,
+            "exact_bytes": 43,
+            "unit_em": 0.7962962962962963,
+            "byte_weighted_unit_em": 0.7962962962962963
+          },
+          "2-2": {
+            "cases": 440,
+            "exact": 308,
+            "target_bytes": 880,
+            "exact_bytes": 616,
+            "unit_em": 0.7,
+            "byte_weighted_unit_em": 0.7
+          },
+          "3-4": {
+            "cases": 1656,
+            "exact": 755,
+            "target_bytes": 6022,
+            "exact_bytes": 2729,
+            "unit_em": 0.4559178743961353,
+            "byte_weighted_unit_em": 0.453171703752906
+          },
+          "5-8": {
+            "cases": 1462,
+            "exact": 453,
+            "target_bytes": 8422,
+            "exact_bytes": 2462,
+            "unit_em": 0.30984952120383036,
+            "byte_weighted_unit_em": 0.29232961291854664
+          },
+          "9-16": {
+            "cases": 78,
+            "exact": 9,
+            "target_bytes": 774,
+            "exact_bytes": 90,
+            "unit_em": 0.11538461538461539,
+            "byte_weighted_unit_em": 0.11627906976744186
+          },
+          "17-32": {
+            "cases": 0,
+            "exact": 0,
+            "target_bytes": 0,
+            "exact_bytes": 0,
+            "unit_em": null,
+            "byte_weighted_unit_em": null
+          }
+        }
+      },
+      "seconds": 55.276234199998726
+    }
+  },
+  "checks": {
+    "b1": {
+      "native_block": 1,
+      "case_ids": [
+        0,
+        1269
+      ],
+      "block_lengths": [
+        1,
+        1
+      ],
+      "max_abs_vs_generate": [
+        4.76837158203125e-07,
+        4.76837158203125e-07
+      ]
+    },
+    "b4": {
+      "native_block": 4,
+      "case_ids": [
+        0,
+        1269,
+        159
+      ],
+      "block_lengths": [
+        4,
+        1,
+        3
+      ],
+      "max_abs_vs_generate": [
+        4.76837158203125e-07,
+        4.76837158203125e-07,
+        1.6689300537109375e-06
+      ]
+    }
+  },
+  "paired_window_bootstrap": {
+    "draws": 5000,
+    "seed": 20261102,
+    "delta_vs_b16_pp": {
+      "b1": {
+        "unit_em": {
+          "observed": 3.2249322493224932,
+          "ci95": [
+            1.8569581940554922,
+            4.68335534360688
+          ]
+        },
+        "byte_weighted_unit_em": {
+          "observed": 3.2565626547795934,
+          "ci95": [
+            1.8323602075950904,
+            4.743699864047756
+          ]
+        }
+      },
+      "b4": {
+        "unit_em": {
+          "observed": 1.8157181571815728,
+          "ci95": [
+            0.8546780505158331,
+            2.7824187280962667
+          ]
+        },
+        "byte_weighted_unit_em": {
+          "observed": 1.5725606736007924,
+          "ci95": [
+            0.5911169347077943,
+            2.5649597089913554
+          ]
+        }
+      }
+    }
+  }
+}

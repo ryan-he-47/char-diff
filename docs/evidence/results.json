@@ -1,0 +1,18 @@
+{
+  "recorded_date": "2026-11-06",
+  "ae_parameters": 3015537,
+  "latent_dimensions": 48,
+  "natural_panel": {
+    "correct": 2046,
+    "total": 2048,
+    "split": "fixed calibration natural spans",
+    "includes_eos": true
+  },
+  "observed_character_coverage": {
+    "correct": 5017,
+    "total": 5017
+  },
+  "natural_source_bytes_in_continuation": 19044237273,
+  "previous_stable_source_bytes": 8589934592,
+  "ae_checkpoint_sha256": "4153028fa4c662e784e3e2a6d7957236bf29f5d0f237a006213a5ce0270f4073"
+}

@@ -1,0 +1,53 @@
+model:
+  d_byte: 192
+  d_pos: 64
+  enc_width: 256
+  enc_layers: 2
+  enc_heads: 4
+  inducing: 0
+  l_max: 32
+  d_emb: 48
+  d_delta: 64
+  dec_hidden: 384
+  dec_depth: 3
+  film_layers: 2
+data:
+  train: data/full_ae_raw_v1
+  augment_probability: 0.5
+  replace_probability: 0.05
+  single_character_probability: 0.01
+  cache_documents: 131072
+  preload_texts: true
+  full_manifest: data/full_ae_raw_v1/manifest.json
+  init_stable: runs/multilingual_ae48/last.pt
+  init_sha256: c842ba6fbc88b47e9e2fe30c21e9648be5d77779d798c2a96ecf1458a3017e96
+train:
+  seed: 1234
+  schedule: wsd
+  run_bytes: 536870912
+  cooldown_bytes: 67108864
+  diagnostic_bytes: 0
+  stage_every_bytes: 2147483648
+  keep_stages: 2
+  batch_windows: 19456
+  micro_batch: 19456
+  precision: fp16
+  lr: 0.0004
+  final_lr: 4.0e-06
+  warmup_updates: 0
+  betas:
+  - 0.9
+  - 0.95
+  eps: 1.0e-08
+  weight_decay: 0.01
+  clip: 1.0
+  max_grad_norm: 2000.0
+  max_consecutive_skips: 20
+  log_every: 10
+  save_every: 250
+  run_dir: runs/full_ae48_epoch1
+  one_pass: true
+storage:
+  project_limit_gib: 32
+  reserve_gib: 1.0
+  require_quota: true

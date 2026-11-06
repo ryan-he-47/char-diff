@@ -1,0 +1,15 @@
+{
+  "public_downloads_available": false,
+  "multilingual_ae": {
+    "sha256": "4153028fa4c662e784e3e2a6d7957236bf29f5d0f237a006213a5ce0270f4073",
+    "download_url": null
+  },
+  "legacy_tinystories": {
+    "requires": [
+      "matching assets/ae_best.pt",
+      "matching assets/tokenizer.json",
+      "prior checkpoint and cache"
+    ],
+    "download_url": null
+  }
+}

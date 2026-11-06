@@ -1,0 +1,48 @@
+model:
+  d_byte: 192
+  d_pos: 64
+  enc_width: 256
+  enc_layers: 2
+  enc_heads: 4
+  inducing: 0
+  l_max: 32
+  d_emb: 48
+  d_delta: 64
+  dec_hidden: 384
+  dec_depth: 3
+  film_layers: 2
+data:
+  train: data/multilingual_stories/train.jsonl
+  manifest: data/multilingual_stories/manifest.json
+  augment_probability: 0.5
+  replace_probability: 0.05
+  single_character_probability: 0.01
+  cache_documents: 131072
+  preload_texts: true
+train:
+  seed: 1234
+  schedule: wsd
+  run_bytes: 536870912
+  cooldown_bytes: 67108864
+  diagnostic_bytes: 67108864
+  stage_every_bytes: 268435456
+  keep_stages: 2
+  batch_windows: 4096
+  micro_batch: 512
+  precision: fp16
+  lr: 0.0004
+  final_lr: 0.000004
+  warmup_updates: 1000
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  weight_decay: 0.01
+  clip: 1.0
+  max_grad_norm: 2000.0
+  max_consecutive_skips: 20
+  log_every: 10
+  save_every: 250
+  run_dir: runs/multilingual_ae48
+storage:
+  project_limit_gib: 16.0
+  reserve_gib: 1.0
+  require_quota: false
